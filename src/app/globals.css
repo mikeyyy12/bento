@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-brand: #f17463;
+  --color-secondary:#8b8b8b;
   
-  --color-gradient:linear-gradient(90deg,#0000 calc(50%-2px),#fff,#0000 calc(50%+2px));
+  --color-gradient:linear-gradient(90deg,#0000 calc(50%-2px),#fff,#0000 calc(50% + 2px));
   --spread:16px;
   --gradient-brand:linear-gradient(var(--color-brand),var(--color-brand));
   --bg:linear-gradient(90deg,#0000 calc(50%-(var(--spread))),#fff,#0000 calc(50%+var(--spread)));
