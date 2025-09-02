@@ -4,7 +4,7 @@ import React, { SVGProps, useEffect, useRef, useState } from 'react'
 import { motion, stagger, useAnimate } from "motion/react"
 import { cn } from '@/lib/utils';
 import { TypeWritter } from '@/components/typewritter';
-import { BoxIcon, BrainSvg, Call, CardHeading, Circle, Claude, Code, CursorSvg, FloatinCard, GptIcon, Green, Meta, Notion, NotusLogo, Share, Slack } from '@/utils/Svgs';
+import { BoxIcon, BrainSvg, Call, CardHeading, Circle, Claude, Code, Connect, CursorSvg, Fingerprint, FloatinCard, GptIcon, Green, Meta, Notion, NotusLogo, Realtime, Share, Slack } from '@/utils/Svgs';
 
 
 export type Chat = {
@@ -303,12 +303,12 @@ export const FeaturesSection = () => {
                             <motion.line
                                 x1="0"
                                 y1="2"
-                                x2="20"
+                                x2="25"
                                 y2="2"
                                 stroke="url(#gradient)"
                                 strokeWidth="1"
-                                strokeOpacity="0.6"
-                                initial={{ x: 0 }}
+                                strokeOpacity="0.8"
+                                initial={{ x: -25 }}
                                 animate={{ x: 240 }}
                                 transition={{
                                     repeat: Infinity,
@@ -334,7 +334,6 @@ export const FeaturesSection = () => {
                                     <Notion />
                                 </div>
                                 <motion.svg height="200" width="2" xmlns="http://www.w3.org/2000/svg">
-
                                     <motion.line
                                         x1="0"
                                         x2="0"
@@ -376,7 +375,7 @@ export const FeaturesSection = () => {
 
                                     </defs>
                                 </motion.svg>
-                                <svg height="200" width="2" xmlns="http://www.w3.org/2000/svg" className=''>
+                                <motion.svg height="200" width="2" xmlns="http://www.w3.org/2000/svg">
                                     <motion.line
                                         x1="0"
                                         x2="0"
@@ -400,7 +399,7 @@ export const FeaturesSection = () => {
                                         }}
                                     />
                                     <line x1="0" y1="0" x2="0" y2="200" strokeWidth={1.4} stroke={"var(--color-stroke)"} strokeOpacity={0.2} />
-                                </svg>
+                                </motion.svg>
                                 <div className='bg-white rounded-md shadow-md border border-gray-200 size-12  flex shrink-0 items-center justify-center' >
                                     <Circle />
                                 </div>
@@ -415,12 +414,12 @@ export const FeaturesSection = () => {
                                 stroke="url(#gradient)"
                                 strokeWidth="1"
                                 strokeOpacity="0.8"
-                                initial={{ x: 0 }}
+                                initial={{ x: -25 }}
                                 animate={{ x: 220 }}
                                 transition={{
                                     repeat: Infinity,
+                                    duration: 1.8,
                                     repeatDelay: 1,
-                                    duration: 2,
                                     ease: "linear"
                                 }}
                             />
@@ -479,7 +478,25 @@ export const FeaturesSection = () => {
 
                     </div>
                 </div>
+                <div className='mt-20 grid grid-cols-3 gap-20 '>
+                    <CardHeading
+                        title='One Click Auth'
+                        subheading='A drag-and-drop interface to create, connect, and configure agents into logical workflows'
+                        Icon={Fingerprint}
+                    />
+                    <CardHeading
+                        title='Realtime Sync'
+                        subheading='Agents operate independently and coordinate tasks to complete complex all goals'
+                        Icon={Realtime}
+                    />
+                    <CardHeading
+                        title='Custom Connector SDK'
+                        subheading='Run agent workflows in a sandbox to preview behavior, debug logic, and test interactions'
+                        Icon={Connect}
+                    />
+                </div>
             </div>
+
 
         </div >
     )
