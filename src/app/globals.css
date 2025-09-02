@@ -10,5 +10,6 @@
   --spread:16px;
   --gradient-brand:linear-gradient(var(--color-brand),var(--color-brand));
   --bg:linear-gradient(90deg,#0000 calc(50%-(var(--spread))),#fff,#0000 calc(50%+var(--spread)));
+  --color-stroke:#909090;
 }
 
