@@ -219,7 +219,7 @@ export const FeaturesSection = () => {
                                 <motion.svg width="298" height="32" viewBox="0 0 298 32"
                                     className='absolute top-2 left-48'
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H297V31.5" stroke="#909090" stroke-opacity="0.2"
+                                    <path d="M1 1H297V31.5" stroke="#909090" strokeOpacity="0.2"
                                         strokeWidth={1.2}
                                         strokeLinecap="round" />
                                     <motion.path
@@ -252,7 +252,7 @@ export const FeaturesSection = () => {
                                         strokeDashoffset={1040}        // dash+gap
                                         animate={{ strokeDashoffset: 0 }}
                                         transition={{ repeat: Infinity, repeatDelay: 0.1, duration: 4, ease: "linear" }}
-                                        d="M1 1H297" stroke-opacity="0.4" stroke-linecap="round" />
+                                        d="M1 1H297" strokeOpacity="0.4" strokeLinejoin="round" />
                                 </svg>
                             </div>
                             <div className='flex items-center relative gap-2'>
@@ -261,24 +261,19 @@ export const FeaturesSection = () => {
                                 <motion.svg width="298"
 
                                     height="40" viewBox="0 0 298 40" fill="none" className={"absolute -top-5 left-48"} xmlns="http://www.w3.org/2000/motion.svg">
-                                    <path d="M1 34H297V1" stroke="#909090" stroke-opacity="0.2" strokeLinecap="round" strokeWidth={1.2} />
+                                    <path d="M1 34H297V1" stroke="#909090" strokeOpacity="0.2" strokeLinecap="round" strokeWidth={1.2} />
                                     <motion.path
                                         d="M1 34H297V1"
                                         stroke="#40FFA6"
                                         strokeWidth={1.2}
                                         strokeLinecap="round"
-                                        strokeDasharray="40 1000"      // gap > path length (~297px)
-                                        strokeDashoffset={1040}        // dash+gap
+                                        strokeDasharray="40 1000"
+                                        strokeDashoffset={1040}
                                         animate={{ strokeDashoffset: 0 }}
                                         transition={{ repeat: Infinity, repeatDelay: 0.1, duration: 4, ease: "linear" }}
                                     />
 
-                                    <defs>
-                                        <linearGradient id="paint0_linear_65_7" x1="41.5" y1="71.5" x2="-4.35509" y2="69.1602" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#40FFA6" />
 
-                                        </linearGradient>
-                                    </defs>
                                 </motion.svg>
                             </div>
 
@@ -318,9 +313,9 @@ export const FeaturesSection = () => {
                                 }}
                             />
                             <linearGradient id="gradient" x1="41.5" y1="71.5" x2="-4.35509" y2="69.1602" gradientUnits="userSpaceOnUse">
-                                <stop offset="0%" stop-color="var(--color-blue-500)" stop-opacity="1" />
-                                <stop offset="50%" stop-color="var(--color-blue-500)" stop-opacity="1" />
-                                <stop offset="100%" stop-color="var(--color-blue-500)" stop-opacity="0" />
+                                <stop offset="0%" stopColor="var(--color-blue-500)" stopOpacity="1" />
+                                <stop offset="50%" stopColor="var(--color-blue-500)" stopOpacity="1" />
+                                <stop offset="100%" stopColor="var(--color-blue-500)" stopOpacity="0" />
                             </linearGradient>
 
                         </motion.svg>
@@ -424,9 +419,9 @@ export const FeaturesSection = () => {
                                 }}
                             />
                             <linearGradient id="gradient" x1="41.5" y1="71.5" x2="-4.35509" y2="69.1602" gradientUnits="userSpaceOnUse">
-                                <stop offset="0%" stop-color="var(--color-blue-500)" stop-opacity="1" />
-                                <stop offset="50%" stop-color="var(--color-blue-500)" stop-opacity="1" />
-                                <stop offset="100%" stop-color="var(--color-blue-500)" stop-opacity="0" />
+                                <stop offset="0%" stopColor="var(--color-blue-500)" stopOpacity="1" />
+                                <stop offset="50%" stopColor="var(--color-blue-500)" stopOpacity="1" />
+                                <stop offset="100%" stopColor="var(--color-blue-500)" stopOpacity="0" />
                             </linearGradient>
                             <line x1="0" y1="2" x2="250" y2="2" strokeWidth={1} stroke={"var(--color-stroke)"} strokeOpacity={0.2} />
                         </svg>
